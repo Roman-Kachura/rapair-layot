@@ -175,12 +175,14 @@ body {
 }
 
 .map-iframe {
+    display: block;
     top: 4vw;
     left: 35vw;
     width: 25vw;
     height: 15vw;
     border: 0.0520vw solid #2A2A2A;
     transition: .3s;
+    z-index: 1000;
 }
 
 .map-iframe.hidden {
