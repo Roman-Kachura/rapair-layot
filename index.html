@@ -146,7 +146,8 @@
                     <span class="circle-image flex-image">
                         <img src="./images/whatsup-opacity.svg" alt="">
                     </span>
-                    <span class="call-whatsup-text">Узнайте стоимость по <span class="whatsup-span">WhatsApp</span></span>
+                    <span class="call-whatsup-text">Узнайте стоимость по <span
+                            class="whatsup-span">WhatsApp</span></span>
                 </button>
             </div>
             <div class="services flex-start">
@@ -269,8 +270,23 @@
         </h4>
         <form class="form" action="" method="post">
             <h5 class="form-title">Введите ваш номер телефона</h5>
-            <label><input id='phone' value='' type="text" placeholder="+7 (_ _ _) _ _ _-_ _-_ _" class="circle-btn form-input"/></label>
-            <label><input value='Перезвоните мне' type="submit" class="circle-btn form-input form-btn"/></label>
+            <label>
+                <input
+                        id='phone'
+                        maxlength="22"
+                        type="text"
+                        placeholder="+7 (_ _ _) _ _ _-_ _-_ _"
+                        class="circle-btn form-input"
+                />
+            </label>
+            <label>
+                <input
+                        id='submit-btn'
+                        value='Перезвоните мне'
+                        type="submit" class="circle-btn form-input form-btn"
+                        disabled
+                />
+            </label>
             <div id='checkbox' class="form-checkbox">
                 <div class="checkbox-wrapper">
                     <div class="marker">
@@ -281,7 +297,7 @@
                     <label><input type="checkbox" class="checkbox"/></label>
                 </div>
                 <div class="checkbox-text">
-                    Нажимая кнопку вы соглашаетесь  с условиями <a href="#">Политики конфиденциальности</a>
+                    Нажимая кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
                 </div>
             </div>
         </form>
@@ -292,6 +308,8 @@
     </div>
 </div>
 
+<script src="https://unpkg.com/imask"></script>
+<script src="phone.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

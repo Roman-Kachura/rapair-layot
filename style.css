@@ -511,9 +511,11 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
+    left: 0;
+    top: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 1000;
+    z-index: 10000000;
     background: rgba(0, 0, 0, .9);
     transition: .3s all;
     -webkit-transition: .3s all;
@@ -618,6 +620,13 @@ body {
     transition: .3s all;
     -webkit-transition: .3s all;
 }
+
+.form-btn:disabled,
+.form-btn:disabled:hover{
+    background: rgba(253, 32, 22, 0.5);
+    cursor: not-allowed;
+}
+
 
 .form-btn:hover {
     background: #e31b12;
@@ -1069,6 +1078,25 @@ body {
 
     .map-iframe {
         display: none;
+    }
+
+    .callback{
+        width: 20rem;
+        height: 22rem;
+    }
+
+    .form-input {
+        width: 15rem;
+        height: 3rem;
+        padding: .6rem;
+        font-size: 1rem;
+    }
+
+    .success-btn{
+        width: 13rem;
+        height: 3rem;
+        padding: .6rem;
+        font-size: 1rem;
     }
 }
 
